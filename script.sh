@@ -1,4 +1,4 @@
-logs_file="monitoring.log"
+logs_file="monitor.log"
 time_sleep=10
 
 while true
@@ -9,8 +9,8 @@ free -h
 df -h
 uptime
 echo ""
-}
->> $logs_file
+} >> $logs_file
+
 sleep $time_sleep
 done
 
